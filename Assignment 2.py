@@ -44,10 +44,10 @@ s1=int(input('Enter the First length of ∆. :'))
 s2=int(input('Enter the Second length of ∆. :'))
 s3=int(input('Enter the Third length of ∆. :'))
 if (s1<(s2+s3)):
-    print('∆ exist')
+    print('Yes')
 elif(s2<(s1+s3)):
-    print('∆ exist')
+    print('Yes')
 elif(s3<(s1+s2)):
-    print('∆ exist')
+    print('Yes')
 else:
-    print('∆ does not exist')    
+    print('No')    
