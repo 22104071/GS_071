@@ -1,0 +1,5 @@
+Time=int(input('Enter Time in seconds'))
+min=Time//60
+
+sec=Time%60
+print("Time is ",min, ",min,", sec,"sec")

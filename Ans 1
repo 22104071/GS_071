@@ -1,0 +1,4 @@
+n1=int(input('Enter the 1st no:'))
+n2=int(input('Enter the 2nd no:'))
+n3=int(input("Enter the 3rd no:" ))
+print('Avg. of n1,n2 and n3 is. :',(n1+n2+n3)/3

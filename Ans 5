@@ -1,0 +1,5 @@
+mport math as m
+
+for n in range(0,360,15):
+     print(round(m.sin(n*3.14/180),4))
+     print(round(m.cos(n*3.14/180),4))

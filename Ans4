@@ -1,0 +1,6 @@
+a=25
+b='25'
+c=25.0
+d=str(a+eval(b)+c)
+print(eval(d))
+print(type(d))

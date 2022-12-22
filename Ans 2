@@ -1,0 +1,20 @@
+GI=int(input('Enter Gross income:'))
+
+Nd=int(input('Enter no. of dependents:'))
+
+TR=int(input('Tax Rate in percents:'))
+
+#Standard Reduction
+SD=int(input("Enter Standard Deduction:"))
+
+#Depenedent Deduction
+
+Dd=int(input('Enter dependent deuction amount per person:'))
+
+Taxable_Income =GI-SD-(Dd*Nd)
+
+print('Taxable_Income:',Taxable_Income)
+
+Tax=(Taxable_Income*TR)/100
+
+print('Tax:',Tax)
