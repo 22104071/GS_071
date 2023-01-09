@@ -1,0 +1,12 @@
+import random 
+import math
+for i in range(10):
+    r=random.randrange(10)
+    print(r)
+    s=random.randrange(10)
+    print(s)
+    a=int(input('Enter the Product:'))
+    if(round(r*s)==a):
+        print('Right!')
+    else:
+        print('Wrong,The answer is:',r*s)
