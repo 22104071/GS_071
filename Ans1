@@ -1,8 +1,0 @@
-A='Python is a case sensitive language'
-print(len(A))
-print(A[::-1])
-b=A[9:26]
-print(A[9:26])
-print('Python is a %s language'%('object oriented'))
-print(A.index('a'))
-print(A.replace(' ',''))
