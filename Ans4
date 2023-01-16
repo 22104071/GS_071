@@ -7,9 +7,3 @@ elif(n2>n1) and (n2>n3):
     print('Greatest:',n2)
 else :
     print('Greatest:',n3)
-#Ans 5
-A=str(input('Enter the statement:'))
-if ('name' in A):
-    print('Yes')
-else:
-        print('No')
