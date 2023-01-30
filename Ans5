@@ -1,5 +1,12 @@
-A=str(input('Enter the statement:'))
-if ('name' in A):
-    print('Yes')
-else:
-        print('No')
+def sort_word(sentence): 
+     # split the sentence into words using hyphen as a breaker 
+     word = sentence.split("-") 
+     # sorting the words 
+     word.sort() 
+     # join the sorted words with a hyphen 
+     sorted_sentence = "-".join(word) 
+     # print the sorted sentence 
+     print(sorted_sentence) 
+  
+ # test the function 
+ sort_word("Hello-to-all-the-coders here")
