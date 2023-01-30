@@ -1,18 +1,15 @@
-def pascal_triangle(n): 
-     # create an empty list to store the current row 
-     current_row = [1] 
-     # print the first row 
-     print(current_row) 
-     #for looping through the remaining rows 
-     for i in range(1,n): 
-         # creating a new row with the previous row 
-         previous_row = current_row 
-         current_row = [1] 
-         for j in range(1,i): 
-             current_row.append(previous_row[j-1] + previous_row[j]) 
-         current_row.append(1) 
-         # printing the current row 
-         print(current_row) 
-  
- # testing the function 
- pascal_triangle(6)
+x=float(input("Enter the lenght of the side(in cm):  "))
+y=float(input("Enter the lenght of the side(in cm):  "))
+z=float(input("Enter the lenght of the side(in cm):  "))
+ 
+def Verify(a,b,c):
+    if (a+b)>c and (a+c)>b and(b+c)>a:
+        x=1
+        s=((a+b+c)/2)
+        area= (s*(s-a)*(s-b)*(s-c))**0.5
+        print('Area of the given triangle is : ',area,'sq.cm')
+    else:
+        x=0
+        print('triangle cannot be formed by the  given dimentions')
+
+Verify(x,y,z)
