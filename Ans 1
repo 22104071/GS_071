@@ -1,0 +1,11 @@
+def is_perfect(num): 
+     divisors = [] 
+     # find divisors of the given number 
+     for i in range(1,num): 
+         if num % i == 0: 
+             divisors.append(i) 
+     # check if the sum of divisors equal to the given number 
+     if sum(divisors) == num: 
+         return True 
+     return False 
+ 
