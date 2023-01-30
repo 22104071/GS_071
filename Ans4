@@ -1,16 +1,9 @@
-import string 
-  
- def is_pangram(sentence): 
-     # remove punctuation from the sentence 
-     sentence = sentence.translate(str.maketrans("", "", string.punctuation)) 
-     # converting the sentence to lowercase 
-     sentence = sentence.lower() 
-     # creating a set of the alphabet 
-     alphabet = set(string.ascii_lowercase) 
-     # check if all the letters of the alphabet are in the sentence 
-     return set(sentence).issuperset(alphabet) 
-  
- # test the function 
- print(is_pangram("The quick brown fox jumps over the lazy dog")) # True 
-#The above used string is the shortest possible sentence having all 26 alphabets.
- print(is_pangram("Hello World")) # False
+n=5
+for i in range(n):
+    for j in range(i):
+        print('* ',end='')
+    print('')
+for i in range(n,0,-1):
+    for j in range(i):
+        print('* ',end='')
+    print('')
