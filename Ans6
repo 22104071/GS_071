@@ -1,11 +1,11 @@
-s1=int(input('Enter the First length of ∆. :'))
-s2=int(input('Enter the Second length of ∆. :'))
-s3=int(input('Enter the Third length of ∆. :'))
-if (s1<(s2+s3)):
-    print('Yes')
-elif(s2<(s1+s3)):
-    print('Yes')
-elif(s3<(s1+s2)):
-    print('Yes')
-else:
-    print('No')    
+def student_data(student_Id, student_name=None, student_class=None): 
+     # print the student id 
+     print(f'Student ID: {student_Id}') 
+     # check if student name and class are provided 
+     if student_name and student_class: 
+         print(f'Student Name: {student_name}') 
+         print(f'Student Class: {student_class}') 
+  
+ # testing the function 
+ student_data(131) 
+ student_data(131, student_name='Ravi', student_class='8th')
