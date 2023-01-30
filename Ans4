@@ -1,15 +1,16 @@
-n1=int(input('Enter the First no. :'))
-n2=int(input('Enter the Second no. :'))
-n3=int(input('Enter the Third no. :'))
-if (n1>n2) and (n2>n3):
-    print('Greatest:',n1)
-elif(n2>n1) and (n2>n3):
-    print('Greatest:',n2)
-else :
-    print('Greatest:',n3)
-#Ans 5
-A=str(input('Enter the statement:'))
-if ('name' in A):
-    print('Yes')
-else:
-        print('No')
+import string 
+  
+ def is_pangram(sentence): 
+     # remove punctuation from the sentence 
+     sentence = sentence.translate(str.maketrans("", "", string.punctuation)) 
+     # converting the sentence to lowercase 
+     sentence = sentence.lower() 
+     # creating a set of the alphabet 
+     alphabet = set(string.ascii_lowercase) 
+     # check if all the letters of the alphabet are in the sentence 
+     return set(sentence).issuperset(alphabet) 
+  
+ # test the function 
+ print(is_pangram("The quick brown fox jumps over the lazy dog")) # True 
+#The above used string is the shortest possible sentence having all 26 alphabets.
+ print(is_pangram("Hello World")) # False
