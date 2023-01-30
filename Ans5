@@ -1,12 +1,14 @@
-def sort_word(sentence): 
-     # split the sentence into words using hyphen as a breaker 
-     word = sentence.split("-") 
-     # sorting the words 
-     word.sort() 
-     # join the sorted words with a hyphen 
-     sorted_sentence = "-".join(word) 
-     # print the sorted sentence 
-     print(sorted_sentence) 
-  
- # test the function 
- sort_word("Hello-to-all-the-coders here")
+rows = int(input("Enter no.of rows: "))
+alphabet = 65
+i = 0
+while(i< rows):
+    j=0
+    while(j<= i):
+        print('%c'%alphabet, end ='' )
+        if alphabet==90:
+            alphabet=65
+        else:
+            alphabet+= 1
+        j+=1
+    print()
+    i+=1
