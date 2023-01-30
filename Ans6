@@ -1,11 +1,12 @@
-def student_data(student_Id, student_name=None, student_class=None): 
-     # print the student id 
-     print(f'Student ID: {student_Id}') 
-     # check if student name and class are provided 
-     if student_name and student_class: 
-         print(f'Student Name: {student_name}') 
-         print(f'Student Class: {student_class}') 
-  
- # testing the function 
- student_data(131) 
- student_data(131, student_name='Ravi', student_class='8th')
+a=int(input('Enter the number: '))
+Prime=True
+if  a==1:
+    print('1 is not a Prime number')
+elif a>1:
+    for i in range(2,a):
+        if a%i==0:
+            Prime=False
+if Prime==True:
+    print (a,'is a Prime number')
+else:
+    print(a,'is not a Prime number')
