@@ -1,6 +1,6 @@
-a=int(input('no. of left candies after divided evenly with 5:'))
-b=int(input('no. of left candies after divided evenly with 6:'))
-c=int(input('no. of left candies after divided evenly with 7:'))
+a=int(input('no. of left candies after divided evenly among 5:'))
+b=int(input('no. of left candies after divided evenly among 6:'))
+c=int(input('no. of left candies after divided evenly among 7:'))
 for n in range(0,200):
     if(n%5==a and n%6==b and n%7==c):
         print('The total no. of candies is:',n)
