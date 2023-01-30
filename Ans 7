@@ -1,0 +1,19 @@
+class Student: 
+     pass 
+  
+ class Marks: 
+     pass 
+ #instance refers to an object under a class.
+ # create instances of Student and Marks classes 
+ Student_1 = Student() 
+ Marks_1 = Marks() 
+  
+ # check if the instances are of the respective classes 
+ print(isinstance(Student_1,Student)) # True 
+ print(isinstance(Marks_1,Marks)) # True 
+  
+ # checking if the classes are subclasses of the object class 
+ print(issubclass(Student,object)) 
+# True 
+ print(issubclass(Marks,object))
+ # True
