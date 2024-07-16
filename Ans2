@@ -1,5 +1,0 @@
-ABC=str(input("Enter your name:"))
-SID=int(input("Enter your SID:"))
-XYZ=str(input("Enter your Department:"))
-Cg=9.9
-print('Hey', ABC, "here","\nMy SID is",SID, "\nI am from",XYZ ,"Department and my CGPA is",Cg)
